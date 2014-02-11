@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Form 2 email test</title>
+	<meta name="description" content="">
+	<meta name="author" content="http://pozhilov.com">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="form.js"></script>
+	<style>
+		* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+		body { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; background:#fafafa; color:#333; padding:30px 0; }
+		.error { background:#FFE8E8; }
+		.hidden { display: none; }
+		fieldset { border:1px solid #eee; padding:30px; width:50%; margin:0 auto; background:white; }
+			fieldset div{ margin:0 0 10px; }
+		.form-field { border:1px solid #ccc; padding:10px; width:100%; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+		.btn-send { background:#39A3F9; color:white; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; border:0 none; padding:10px 25px; }
+		#footer, .result { padding:10px 30px; width:50%; margin:0 auto; color:#999; font-size: 13px; text-align: right; }
+			#footer a { color:#067BFD; text-decoration: none; }
+	</style>
+</head>
+<body>
+
+<fieldset class="msg-form">
+	<h1>Form to email test</h1>
+	<div>
+		<input type="text" placeholder="Your Name" id="f_name" name="f_name" class="form-field">
+	</div>
+	<div>
+		<input type="text" placeholder="Your email address" id="f_email" name="f_email" class="form-field">
+	</div>
+	<div>
+		<textarea id="f_msg" name="f_msg" rows="10" class="form-field" placeholder="Type your message here"></textarea>
+	</div>
+	<div>
+		<input type="checkbox" name="f_subscribe" id="f_subscribe" value="yes"><label for="f_subscribe"> <i></i>Subscribe to our newsletter</label>
+	</div>
+	<div>
+		<button class="btn-send" type="button">Submit</button>
+	</div>
+</fieldset>				
+
+<!-- Result Messages -->
+<div id="error_msg" class="result hidden">
+	<div>
+		<b>Sorry, but there were error(s) found with the form you submitted:</b><br>
+		<span class="str-received"></span>
+	</div>
+</div>
+<div id="msg" class="result hidden">
+	<b>Message sent!</b> 
+</div>
+<!-- End of Result Messages -->
+
+<footer id="footer">
+	Coded by <a href="http://pozhilov.com">Sergey Pozhilov</a>. Follow me on <a href="http://twitter.com/serggg">Twitter</a> or <a href="https://github.com/pozh">Github</a>
+</footer>
+
+</body>
+</html>

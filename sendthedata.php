@@ -3,7 +3,8 @@
  * Form to email script
  * by Sergey Pozhilov 
  * http://pozhilov.com
- * 
+ * Details & docs: https://github.com/pozh/Form2email
+  * 
  * License: MIT
  * 
  * This program may be used and modified free of charge by anyone, so long as this
